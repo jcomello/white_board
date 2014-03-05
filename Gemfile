@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.2'
+gem 'i18n', github: 'svenfuchs/i18n'
 
 gem 'mongoid', git: 'https://github.com/mongoid/mongoid.git'
 gem 'bson_ext'
@@ -29,6 +30,8 @@ gem 'jbuilder', '~> 1.2'
 
 gem 'backbone-on-rails'
 
+gem 'simple_form'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
@@ -37,6 +40,8 @@ end
 group :development, :test do
   gem "rspec-rails"
   gem 'capybara'
+  gem 'selenium-webdriver'
+  gem 'debugger'
 end
 
 # Use ActiveModel has_secure_password

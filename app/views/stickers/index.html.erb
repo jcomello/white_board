@@ -1,0 +1,13 @@
+
+<div class="stickers planed-stickers">
+  <ul>
+    <% @stickers.each do |sticker| %>
+      <li>
+        <a href="#">
+          <h2><%= sticker.title %></h2>
+          <p><%= sticker.description   %></p>
+        </a>
+      </li>
+    <% end %>
+  </ul>
+</div>
